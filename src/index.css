@@ -1,3 +1,38 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+#app{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    align-items:center ;
+}
+
+#app div {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+
+}
+
+#app div h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+
+}
+
+.info div h3 {
+    font-weight: bold;
+    color: green;
+
+}
+@media(max-width: 550px){
+    #app{
+        grid-template-columns: 1fr;
+    }
+}
